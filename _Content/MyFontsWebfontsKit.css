@@ -1,0 +1,44 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 2968655, 2015-02-09T09:34:29-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: EurostileLTPro-Demi by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/eurostile/pro-demi/
+ * Copyright: Copyright &#x00A9; 2007 Linotype GmbH, www.linotype.com. All rights reserved. This font software may not be reproduced, modified, disclosed or transferred without the express written approval of Linotype GmbH. Eurostile is a trademark of Linotype GmbH and
+ * Licensed pageviews: 500,000
+ * 
+ * Webfont: EurostileLT by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/eurostile/eurostile-63893/
+ * Copyright: Copyright &#x00A9; 1987, 1992, 1998, 2002, 2005 Linotype GmbH, www.linotype.com. All Rights Reserved. Copyright &#x00A9; 1987, 1992, 1998, 2002 Adobe Systems Incorporated. All Rights Reserved.
+ * Licensed pageviews: 250,000
+ * 
+ * Webfont: EurostileLTPro by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/eurostile/pro-roman/
+ * Copyright: Copyright &#x00A9; 2007 Linotype GmbH, www.linotype.com. All rights reserved. This font software may not be reproduced, modified, disclosed or transferred without the express written approval of Linotype GmbH. Eurostile is a trademark of Linotype GmbH and
+ * Licensed pageviews: 250,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2968655
+ * 
+ * © 2015 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2d4c4f");
+
+  
+@font-face {font-family: 'EurostileLTPro-Demi';src: url('webfonts/2D4C4F_0_0.eot');src: url('webfonts/2D4C4F_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2D4C4F_0_0.woff2') format('woff2'),url('webfonts/2D4C4F_0_0.woff') format('woff'),url('webfonts/2D4C4F_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'EurostileLT';src: url('webfonts/2D4C4F_1_0.eot');src: url('webfonts/2D4C4F_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2D4C4F_1_0.woff2') format('woff2'),url('webfonts/2D4C4F_1_0.woff') format('woff'),url('webfonts/2D4C4F_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'EurostileLTPro';src: url('webfonts/2D4C4F_2_0.eot');src: url('webfonts/2D4C4F_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2D4C4F_2_0.woff2') format('woff2'),url('webfonts/2D4C4F_2_0.woff') format('woff'),url('webfonts/2D4C4F_2_0.ttf') format('truetype');}
+ 

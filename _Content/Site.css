@@ -1,0 +1,932 @@
+﻿.EurostileLTPro-Demi {
+    font-family: EurostileLTPro-Demi;
+    font-weight: normal;
+    font-style: normal;
+}
+.EurostileLT {
+    font-family: EurostileLT;
+    font-weight: normal;
+    font-style: normal;
+}
+.EurostileLTPro {
+    font-family: EurostileLTPro;
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    -webkit-font-smoothing : subpixel-antialiased;
+    font-weight            : normal;
+    background             : black;
+}
+
+body {
+    margin: 0;
+    overflow-x:hidden;
+    height: 100%;
+    padding-top    : 50px;
+    padding-bottom : 20px;
+    font-family: 'EurostileLTPro', 'Open Sans', sans-serif;
+    font-weight    : 100;
+    font-size      : 12pt;
+}
+
+a {
+    color: white;
+    }
+
+@media screen and (min-width : 1600px) {
+
+    body {
+        font-size : 14pt;
+    }
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left  : 15px;
+    padding-right : 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width : 280px;
+}
+
+h1 {
+    color       : white;
+    text-shadow : none;
+    /*font-family : 'Forza B', 'Forza A', Arial, Helvetica, sans-serif;*/
+    font-weight : 100;
+}
+
+h3 {
+    color         : white;
+    font-size     : 1em;
+    margin-bottom : 15px;
+    font-weight: bold;
+}
+
+p, li, li ul li {
+    text-shadow : none;
+    color       : white;
+    font-size   : 1em;
+    font-weight: normal;
+}
+.arrow {
+
+    font-size: 3em;
+    padding-top: 3em;
+}
+
+/*.arrow-up {*/
+    /*width         : 0;*/
+    /*height        : 0;*/
+    /*border-left   : 10px solid transparent;*/
+    /*border-right  : 10px solid transparent;*/
+    /*border-bottom : 10px solid goldenrod;*/
+    /*display       : inline-block;*/
+    /*margin-left   : 20px;*/
+/*}*/
+
+/*.arrow-down {*/
+    /*width        : 0;*/
+    /*height       : 0;*/
+    /*border-left  : 10px solid transparent;*/
+    /*border-right : 10px solid transparent;*/
+    /*border-top   : 10px solid goldenrod;*/
+    /*display      : inline-block;*/
+    /*margin-top   : 10px;*/
+    /*margin-left  : 20px;*/
+/*}*/
+
+.arrow-right {
+    float         : right;
+    width         : 0;
+    height        : 0;
+    border-top    : 25px solid transparent;
+    border-bottom : 25px solid transparent;
+    border-left   : 25px solid goldenrod;
+    margin-left: 15px;
+    position: relative;
+    top: 40%;
+    cursor: pointer;
+    font-size: 14pt;
+}
+
+.arrow-left {
+    float: left;
+    width         : 0;
+    height        : 0;
+    border-top    : 25px solid transparent;
+    border-bottom : 25px solid transparent;
+    border-right   : 25px solid goldenrod;
+    position: relative;
+    top: 40%;
+    cursor: pointer;
+    font-size: 14pt;
+}
+
+#fixed-footer .arrow-right {
+    width         : 0;
+    height        : 0;
+    border-top    : 25px solid transparent;
+    border-bottom : 25px solid transparent;
+    border-left   : 25px solid goldenrod;
+    margin-left: 15px;
+    position: absolute;
+    top: 50%;
+    z-index: 5000;
+    right: 10px;
+    cursor: pointer;
+}
+
+#fixed-footer .arrow-right:hover {
+    border-left   : 25px solid orange;
+}
+
+#fixed-footer .arrow-left:hover {
+    border-right   : 25px solid goldenrod;
+}
+
+
+#fixed-footer .arrow-left {
+    width         : 0;
+    height        : 0;
+    border-top    : 25px solid transparent;
+    border-bottom : 25px solid transparent;
+    border-right   : 25px solid goldenrod;
+    position: absolute;
+    top: 50%;
+    z-index: 5000;
+    left: 10px;
+    cursor: pointer;
+
+}
+
+.bottom-menu-list {
+    padding-top: 0em !important;
+}
+
+.button {
+    background-color : #003a77 !important;
+    border-color     : silver !important;
+    border           : 5px solid;
+    border-radius    : 15px;
+    color            : white !important;
+}
+
+.capabilities-intro {
+    margin-top : 0;
+}
+
+.child-list {
+    height      : 180px;
+    margin-left : 0 !important;
+}
+
+.client-callout {
+    background : white;
+    text-align : center;
+}
+
+.container {
+    max-width : 100%;
+}
+
+.content-body {
+    width: 100%;
+    z-index: 6;
+    /*border: 5px solid green;*/
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 50px;
+}
+
+.dot {
+    display          : inline-block;
+    width            : 20px;
+    height           : 20px;
+    border-radius    : 10px;
+    background-color : #8999A6;
+    padding          : 5px;
+    margin: 3px;
+}
+
+.dot-active {
+    background-color: goldenrod;
+}
+
+.fly-in {
+    margin      : 0;
+    margin-left : 0px !important;
+    padding     : 0;
+    position    : absolute;
+    left        : -1000 !important;
+}
+
+footer p {
+    text-align : center;
+    width      : 100%;
+}
+
+.footer-title-up, .footer-title-up a, .footer-title-up a:visited, .footer-title-up a:hover, .footer-title-up a:focus, .footer-title-down, .footer-title-down a, .footer-title-down a:visited, .footer-title-down a:hover, .footer-title-down a:focus {
+    text-decoration : none !important;
+    text-transform  : uppercase;
+    cursor: pointer;
+}
+
+.footer-title-up:after, .show-menu-up:after {
+    content             : ' ';
+    height              : 0;
+    position            : absolute;
+    width               : 0;
+    border              : 10px solid transparent; /* arrow size */
+    border-bottom-color : goldenrod; /* arrow color */
+
+    /* positioning */
+    position            : relative;
+    top                 : -15px;
+    left                : 10px;
+    z-index             : 2;
+}
+
+.footer-title-down:after, .show-menu-down:after {
+    content          : ' ';
+    height           : 0;
+    position         : absolute;
+    width            : 0;
+    border           : 10px solid transparent; /* arrow size */
+    border-top-color : goldenrod; /* arrow color */
+
+    /* positioning */
+    position         : relative;
+    top              : 15px;
+    left             : 10px;
+    z-index          : 2;
+}
+
+.frame {
+    overflow : hidden;
+    padding  : 0;
+}
+
+.frame .slidee {
+    margin     : 0;
+    padding    : 0;
+    height     : 100%;
+    list-style : none;
+    min-width  : 956px;
+}
+
+.frame .slidee li {
+    float       : left;
+    margin      : 0;
+    padding     : 1%;
+    width       : 180px;
+    height      : 100%;
+    font-size   : 1em;
+    text-align  : center;
+}
+
+.full-width-band {
+    padding: 0;
+    margin     : 0;
+    width      : 100%;
+    background : #003a77;
+    color      : black;
+}
+
+.full-width-band img {
+    max-width  : auto;
+    max-height : 100%;
+    object-fit : contain;
+
+}
+
+.header-row {
+    background     : none !important;
+    border         : none;
+    height         : 125px;
+    padding-bottom : 35px;
+}
+
+.header-row h1 {
+    color          : white;
+    float          : left;
+    margin         : 61px 0 !important;
+    padding        : 0 10px !important;
+    text-align     : left;
+    text-transform : uppercase;
+}
+
+.header-row #header-logo {
+    float  : left;
+    margin : 30px 10px 0 31px;
+    width  : 100px;
+}
+
+.landing-menu-item {
+    float       : left;
+    font-size   : 1em;
+    list-style  : none;
+    text-align  : center;
+    line-height: 12pt;
+}
+
+.landing-menu-item:nth-child(7n+7), .landing-menu-item:nth-child(7n+13) {
+    clear : left;
+}
+
+.landing-menu-item img, .slidee img {
+    border-radius: 50%;
+    margin: 12pt 0;
+    width  : 90px;
+    height : 90px;
+}
+
+.landing-menu-item img {
+        margin-top: 16px;
+
+}
+
+@media screen and (min-width : 1600px) {
+
+    .landing-menu-item img, .slidee img {
+        width: 110px;
+        height:110px
+    }
+
+}
+
+    #fixed-footer .landing-menu-item img, #fixed-footer .slidee img {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+#left-custom-content {
+    margin-right: 30px;
+}
+#left-custom-image {
+    width : 95%;
+}
+
+.market-button {
+    margin: 30px 0;
+}
+
+#main-content {
+    position: absolute;
+    top: 110px;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+
+.market-panel {
+    color      : white;
+    padding    : 0 30px;
+    margin: 0px !important;
+    min-height : 400px;
+    background : none;
+    width      : 100%;
+    margin     : auto;
+}
+
+
+
+.market-panel-right {
+    content             : attr(testClass);
+    height              : 0;
+    position            : absolute;
+    width               : 0;
+    border              : 40px solid transparent;
+    border-left-color : goldenrod;
+    float: right;
+
+    position            : relative;
+    top                 : 200px;
+    left                : 10px;
+    z-index             : 2;
+}
+
+
+.market-slide-image {
+    width : 100%;
+
+}
+
+.market-image-round {
+    margin-top: 15px;
+    border-radius: 50%;
+    width: 35%;
+}
+
+
+@media screen and (min-width : 1600px) {
+
+    .market-slide-image {
+        max-height: 800px;
+        max-width: 800px;
+        float: right;
+    }
+}
+
+.markets-intro {
+    margin-top : 260px;
+}
+
+.menu-header {
+    height       : 180px;
+    padding-left : 35px;
+    position     : relative;
+    left         : -2000px;
+}
+
+.menu-header a {
+    margin    : 0;
+    position  : absolute;
+    top       : 50%;
+    transform : translate(0, -50%)
+}
+
+.menu-list {
+    position : absolute;
+    left     : -2000px;
+    /*padding-top: 10px;*/
+}
+
+#page-container {
+    background : none;
+    min-height : 608px !important;
+    /*overflow-y: scroll;*/
+    height: 100%;
+    padding-top: 125px !important;
+    background  : -webkit-linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.05)); /* For Safari 5.1 to 6.0 */
+    background  : -o-linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.05)); /* For Opera 11.1 to 12.0 */
+    background  : -moz-linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.05)); /* For Firefox 3.6 to 15 */
+    background  : linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.05)); /* Standard syntax (must be last) */
+}
+
+#page-container.fittings {
+    background : none;
+      min-height : 608px !important;
+    overflow-y: scroll;
+    height: 100%;
+    padding-top: 125px !important;
+}
+
+#page-container a {
+    color       : white;
+    font-weight : normal;
+}
+
+#page-content ul {
+    padding-top: 15px;
+    font-size : 1em;
+    color     : white;
+}
+
+.panel-link-item {
+    font-weight    : normal !important;
+    text-transform : uppercase;
+}
+
+.products-intro {
+    margin-top : 140px;
+}
+
+.ribbon {
+    width         : 100%;
+    margin-left   : 0 !important;
+    margin-bottom : 6px;
+    min-height    : 180px;
+}
+
+/*#right-custom-content, #left-custom-content, #slide-custom-content {*/
+    /*margin-bottom: 10px;*/
+    /*margin-right : 10px;*/
+    /*background  : -webkit-linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15)); *//* For Safari 5.1 to 6.0 */
+
+/*}*/
+
+#slide-custom-content {
+    margin-right : 0;
+}
+.capabilities-header {
+    background-color : rgba(0, 96, 102, 1);
+    margin: 0 !important;
+}
+
+.case-study-header {
+    background-color : rgba(115, 104, 103, 1);
+    margin: 0 !important;
+
+}
+
+.markets-header {
+    background-color : rgba(109, 26, 66, 1);
+    margin: 0 !important;
+
+}
+
+#page-headline {
+    height : 31px;
+}
+
+.page-title {
+}
+
+.products-header {
+    background-color : rgba(166, 63, 30, 1);
+    margin: 0 !important;
+
+}
+
+.capabilities-list, .capabilities-bottom-menu-list {
+    background-color : rgba(0, 96, 102, .4);
+}
+
+.case-study-list, .case-study-bottom-menu-list {
+    background-color : rgba(115, 104, 103, .4);
+}
+
+.markets-list, .markets-bottom-menu-list {
+    background-color : rgba(109, 26, 66, .4);
+}
+
+.products-list, .products-bottom-menu-list {
+    background-color : rgba(166, 63, 30, .4);
+}
+
+.capabilities-bottom-menu-list, .products-bottom-menu-list, .markets-bottom-menu-list, .case-study-bottom-menu-list {
+    margin-top : 5px;
+    width      : 101%;
+    min-height : 180px;
+}
+
+.product-landing-item {
+    display: table-cell;
+    vertical-align: middle;
+    float: left;
+    margin-bottom: 35px;
+    min-height: 100px;
+}
+
+.product-landing-item a {
+    color: white;
+}
+.product-landing-item img {
+    margin-bottom: 40px;
+}
+
+#right-column {
+    margin-left: 30px;
+}
+
+.secondary {
+    padding-top : 15px;
+}
+
+#sectionMenu {
+    background         : -webkit-linear-gradient(right, rgba(0, 0, 0, .8), transparent); /* For Safari 5.1 to 6.0 */
+    background         : -o-linear-gradient(left, rgba(0, 0, 0, .8), transparent); /* For Opera 11.1 to 12.0 */
+    background         : -moz-linear-gradient(left, rgba(0, 0, 0, .8), transparent); /* For Firefox 3.6 to 15 */
+    background         : linear-gradient(to left, rgba(0, 0, 0, .8), transparent); /* Standard syntax (must be last) */
+    -webkit-box-shadow : none;
+    box-shadow         : none;
+    color              : aquamarine;
+    font-size          : 1.2rem;
+    padding-top        : 50px;
+    z-index            : 500000;
+}
+
+#sectionMenu ul li {
+    list-style    : none;
+    direction     : ltr;
+    margin-bottom : 35px;
+    text-align    : right;
+}
+
+#sectionMenu ul li.capabilities-panel-item:after {
+    color              : rgba(0, 96, 102, 1);
+    content            : ' \25CF';
+    font-size          : 80px;
+    float              : right;
+    margin-top         : -45px;
+    margin-right       : 40px;
+    -webkit-box-shadow : none;
+    box-shadow         : none;
+}
+
+#sectionMenu ul li.mainmenu-panel-item:after {
+    color        : rgba(115, 104, 103, 1);
+    content      : ' \25CF';
+    font-size    : 80px;
+    float        : right;
+    margin-top   : -45px;
+    margin-right : 40px;
+}
+
+#sectionMenu ul li.markets-panel-item:after {
+    color        : rgba(109, 26, 66, 1);
+    content      : ' \25CF';
+    font-size    : 80px;
+    float        : right;
+    margin-top   : -45px;
+    margin-right : 40px;
+}
+
+#sectionMenu ul li.products-panel-item:after {
+    color        : rgba(166, 63, 30, 1);
+    content      : ' \25CF';
+    font-size    : 80px;
+    float        : right;
+    margin-top   : -45px;
+    margin-right : 40px;
+}
+
+#section-menu-button {
+    background    : none;
+    border-radius : 50%;
+    height        : 50px;
+    padding       : 12.5px;
+    margin        : 60px;
+    width         : 50px;
+
+}
+
+#show-menu {
+    border-radius: 25px;
+    padding: 10px 20px 10px 15px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.show-menu-up.capabilities {
+    border: 2px solid rgba(0, 96, 102, 1);
+}
+
+.show-menu-up.products {
+    border: 2px solid rgba(166, 63, 30, 1);
+}
+
+.show-menu-down {
+    border: 2px solid #878f94;
+
+}
+
+#submenu {
+    float          : left;
+    clear          : both;
+    margin-left    : 150px;
+    margin-top     : -45px;
+    text-transform : capitalize;
+    width          : 80%;
+}
+
+#submenu a {
+    color: #878f94;
+
+}
+
+#submenu-content {
+    padding-left: 30px;
+    margin-top  : 20px;
+    padding-top : 15px;
+    position    : relative;
+    top         : 0;
+    left        : 0;
+
+}
+
+#submenu-content a {
+    color: white;
+}
+
+#submenu-content ul {
+    z-index         : 7000;
+    max-width       : none;
+    min-height      : 500px;
+
+    list-style-type : none;
+    padding         : 0;
+}
+
+#submenu-content ul li {
+    display       : inline;
+    float         : left;
+    height        : 60px;
+    margin-bottom : 5px;
+    padding       : 5px;
+    width         : 33%;
+    max-width     : none;
+    min-height    : 90px;
+}
+
+#submenu-content ul li a {
+    display       : table;
+    min-height    : 60px;
+}
+
+#submenu-content ul li a.active {
+    color: goldenrod;
+}
+
+#submenu-content ul li span {
+    min-height    : 50px;
+    display       : table-cell;
+    vertical-align: middle;
+}
+
+#submenu-content img, .product-landing-item img {
+    width         : 60px;
+    height        : 60px;
+    border-radius : 30px;
+    margin-right  : 15px;
+    float: left;
+}
+
+#submenu-content.submenu-products {
+    border-top  : 5px solid rgba(166, 63, 30, 1);
+    background  : -webkit-linear-gradient(rgba(166, 63, 30, .8), rgba(166, 63, 30, .5)); /* For Safari 5.1 to 6.0 */
+    background  : -o-linear-gradient(rgba(166, 63, 30, .8), rgba(166, 63, 30, .5)); /* For Opera 11.1 to 12.0 */
+    background  : -moz-linear-gradient(rgba(166, 63, 30, .8), rgba(166, 63, 30, .5)); /* For Firefox 3.6 to 15 */
+    background  : linear-gradient(rgba(166, 63, 30, .8), rgba(166, 63, 30, .5)); /* Standard syntax (must be last) */
+}
+
+#submenu-content.submenu-capabilities {
+    border-top  : 5px solid rgba(0, 96, 102, 1);
+    background  : -webkit-linear-gradient(rgba(0, 96, 102, .8), transparent); /* For Safari 5.1 to 6.0 */
+    background  : -o-linear-gradient(rgba(0, 96, 102, .8), transparent); /* For Opera 11.1 to 12.0 */
+    background  : -moz-linear-gradient(rgba(0, 96, 102, .8), transparent); /* For Firefox 3.6 to 15 */
+    background  : linear-gradient(rgba(0, 96, 102, .8), transparent); /* Standard syntax (must be last) */
+}
+
+.submenu-links {
+    text-decoration: none;
+}
+
+
+.video-caption {
+    padding-top : 19px;
+    text-align  : center;
+    width       : 100%;
+}
+
+#video-modal-link {
+    float : right;
+}
+
+#video-poster {
+    min-height : 32px;
+    min-width  : 32px;
+    width      : 320px;
+}
+
+#video-container {
+    width : 100%;
+}
+
+.view-content-link {
+    width      : 20%;
+    margin     : auto;
+    margin-top : 50px;
+}
+   
+.view-content-text {
+    position:relative; left: 260px; color:white; font-family: 'EurostileLTPro', 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    text-transform:uppercase;
+}
+
+
+
+/* LANDING ANIMATIONS */
+.landing-animation {
+    background : blue;
+}
+
+.top-landing-overlay, .bottom-landing-overlay {
+    height : 38%;
+}
+
+.center-landing-overlay {
+    height        : 20%;
+    margin-top    : 1%;
+    margin-bottom : 1%;
+}
+
+/* BOOTSTRAP */
+
+.clearfix {
+    height : 40px;
+}
+
+.glyphicon {
+    color: goldenrod;
+}
+
+.modal {
+    z-index : 10000;
+}
+
+.modal-body {
+    padding : 0;
+}
+
+.modal-dialog {
+    width   : 100%;
+    height  : 100%;
+    padding : 0;
+    margin  : 0 !important;
+}
+
+.modal-content {
+    height        : 100%;
+    border-radius : 0;
+}
+
+.nav-tabs {
+    border-bottom : 1px solid #6d1a42;
+    margin-bottom: 21px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus, .nav > li > a:hover, .nav > li > a:focus {
+    background : #6d1a42;
+    border     : none;
+    color      : white;
+}
+
+.panel {
+    background: none;
+}
+.panel-body {
+    border: none;
+    border-radius: 3px;
+}
+.panel-heading, .panel-default>.panel-heading, .panel-default {
+    background: none;
+    border: none;
+    border-color: none;
+}
+
+.panel-title {
+    font-size: inherit;
+}
+
+.panel-title a {
+    text-decoration: none;
+}
+.row {
+    margin-left : 35px;
+}
+
+.tab-content .row {
+    margin-top  : 5px;
+    margin-left : 0 !important;
+}
+
+.ui-footer-fixed {
+    padding-bottom: 0;
+}
+
+.ui-header-fixed {
+    top: 0px;
+    padding-top: 0px;
+}
+
+.ui-header-fixed.ui-fixed-hidden {
+    top 0px !important;
+    padding-top: 0px !important;
+}
+
+
+.ui-page-theme-a a:hover, html .ui-bar-a a:hover, html .ui-body-a a:hover, html body .ui-group-theme-a a:hover {
+    color : white;
+}
+
+.ui-shadow {
+    -webkit-box-shadow : none;
+    box-shadow         : none;
+}
+
+/* DEBUGGING - NOT UTILIZED FOR PRODUCTION CODE */
+
+.debug {
+    border : 3px solid pink;
+    color  : #ffff00;
+}
+
+.ofTest {
+    overflow    : auto;
+    overflow-y  : hidden;
+    height      : 150px;
+    width       : 1500px;
+    white-space : nowrap;
+}

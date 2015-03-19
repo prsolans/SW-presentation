@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link href="_Content/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="_Content/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet"/>
+    <link href="_Content/jquery.mobile.theme-1.4.5.min.css" rel="stylesheet"/>
+    <link href="_Content/Site.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="_Content/MyFontsWebfontsKit.css">
+    <script src="_Scripts/jquery-1.11.2.min.js"></script>
+    <script src="_Scripts/jquery.mobile-1.4.5.min.js"></script>
+    <script src="_Scripts/modernizr-2.6.2.js"></script>
+    <script src="_Scripts/sly.js"></script>
+    <script src="_Scripts/main.js"></script>
+</head>
+<body>
+<!-- Add your site or application content here -->
+<div data-role='page' data-pageid="1" id="page-container" data-ajax="false">
+    <div data-role='panel' id='sectionMenu' data-position='right' data-display='overlay'>
+
+    </div>
+    <!-- /panel -->
+    <div id="header-row" class='header-row' data-role='header' data-position='fixed'>
+
+    </div>
+    <div class="clearfix">&nbsp;</div>
+    <!-- /header -->
+    <div class="ribbon row capabilities-row">
+        <div class="menu-header capabilities-header col-xs-2">
+            <a href="capabilities/index.html" onclick="setLinks(3, 2)" data-ajax="false">CAPABILITIES</a>
+        </div>
+        <div class="menu-list capabilities-list col-xs-10">
+
+            <div class="arrow-left capabilities"></div>
+
+            <div class="arrow-right capabilities"></div>
+
+            <div class="frame">
+
+                <ul class="slidee capabilities-child-pages-list">
+
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="ribbon row products-row">
+        <div class="menu-header products-header col-sm-2">
+            <a id="products-page-link" href="products/index.html" onclick="setLinks(4, 2)" data-ajax="false">PRODUCTS</a>
+        </div>
+        <div class="menu-list products-list col-sm-10">
+            <div class="arrow-left products"></div>
+            <div class="arrow-right products"></div>
+
+            <div class="frame">
+                <ul class="slidee products-child-pages-list">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ribbon row markets-row">
+        <div class="menu-header markets-header col-sm-2">
+            <a id="markets-page-link" href="markets/index.html" onclick="setLinks(5, 2)" data-ajax="false">MARKETS</a>
+        </div>
+        <div class="menu-list markets-list col-sm-10" style="padding-top: 15px;">
+            <div class="frame">
+                <ul class="slidee markets-child-pages-list" style="width: 100% !important"></ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="_Scripts/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+
+
+        // -------------------------------------------------------------
+        //   Basic Navigation
+        // -------------------------------------------------------------
+        (function () {
+            var $frame = $('.frame');
+            var $slidee = $frame.children('ul').eq(0);
+            var $wrap = $frame.parent();
+
+            // Call Sly on frame
+            $frame.sly({
+                horizontal: 1,
+                itemNav: 'basic',
+                smart: 1,
+                activateOn: 'drag',
+                mouseDragging: 1,
+                touchDragging: 1,
+                releaseSwing: 1,
+                startAt: 3,
+                scrollBy: 0,
+                pagesBar: $wrap.find('.pages'),
+                activatePageOn: 'tap',
+                speed: 300,
+                elasticBounds: 0,
+                dragHandle: 1,
+                dynamicHandle: 1,
+                clickBar: 1
+
+            });
+
+
+        }());
+    });
+
+</script>
+</body>
+</html>

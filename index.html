@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link href="_Content/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="_Content/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet"/>
+    <link href="_Content/jquery.mobile.theme-1.4.5.min.css" rel="stylesheet"/>
+    <link href="_Content/Site.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="_Content/MyFontsWebfontsKit.css">
+    <script src="_Scripts/jquery-1.11.2.min.js"></script>
+    <script src="_Scripts/jquery.mobile-1.4.5.min.js"></script>
+    <script src="_Scripts/modernizr-2.6.2.js"></script>
+    <script src="_Scripts/main.js"></script>
+
+</head>
+<body>
+<!-- Add your site or application content here -->
+<div data-role='page' data-pageid="1" id="page-container" data-ajax="false">
+    <!-- Modal -->
+    <div class="modal fade" id="introScreen-video-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="introScreen-video-modal-body">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- END Modal -->
+    <div data-role='panel' id='sectionMenu' data-position='right' data-display='overlay'>
+    </div>
+    <!-- /panel -->
+    <div id="header-row" class='header-row' data-role='header' data-position='fixed'>
+    </div>
+    <!-- /header -->
+
+    <div class="row fly-in">
+        <div class="full-width-band">
+            <div class="col-xs-4">
+                <img id="video-modal-link" src="_Content/images/index-video.jpg" data-toggle="modal" data-target="#introScreen-video-modal" />
+            </div>
+            <div class="col-xs-4 client-callout">
+                <a href="" id="case-study-link" data-ajax="false"><img src="" id="client-logo"/></a>
+            </div>
+            <div class="col-xs-4">
+                <img src="_Content/images/index-image.jpg"/>
+            </div>
+
+        </div>
+        <div style="text-align: center; margin: auto; margin-top: 3em; margin-right: 60px;"><span class="view-content-text">Enter</span><a id="view-content-link" style="text-decoration: none;" href="mainMenu.html" onclick="setLinks(2, 1)" class="view-content-link" data-ajax="false">
+            <img id="content-rollover" src="/presentations/_Content/images/button-off.png" width="450px" /></a></div>
+    </div>
+</div>
+<script src="_Scripts/bootstrap.min.js"></script>
+<link href="_Scripts/video-js/video-js.min.css" rel="stylesheet">
+<script src="_Scripts/video-js/video.js"></script>
+<script>
+    videojs.options.flash.swf = "_Scripts/video-js/video-js.swf";
+</script>
+<script>
+
+    $(document).ready(function() {
+        $('#content-rollover').hover(
+                function () {
+                    $(this).attr('src', '/presentations/_Content/images/button-on.png');
+                }, function () {
+                    $(this).attr('src', '/presentations/_Content/images/button-off.png');
+                }
+        );
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link href="/presentations/_Content/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/presentations/_Content/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet"/>
+    <link href="/presentations/_Content/jquery.mobile.theme-1.4.5.min.css" rel="stylesheet"/>
+    <link href="/presentations/_Content/Site.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="/presentations/_Content/MyFontsWebfontsKit.css">
+    <script src="/presentations/_Scripts/jquery-1.11.2.min.js"></script>
+
+    <script src="/presentations/_Scripts/jquery.mobile-1.4.5.min.js"></script>
+
+
+    <script src="/presentations/_Scripts/modernizr-2.6.2.js"></script>
+    <script src="/presentations/_Scripts/sly.js"></script>
+    <script src="/presentations/_Scripts/main.js"></script>
+</head>
+<body>
+<!-- Add your site or application content here -->
+<div data-role='page' data-pageid="4" id="page-container" class="fittings" style="">
+
+    <div data-role='panel' id='sectionMenu' data-position='right' data-tap-toggle="false" data-display='overlay'>
+    </div>
+    <!-- /panel -->
+    <div id="header-row" class='header-row' data-role='header' data-tap-toggle="false" data-position='fixed'>
+    </div>
+
+    <!-- /header -->
+    <div class="clearfix">&nbsp;</div>
+    <div data-role="main" id="main-content">
+
+        <div class="row">
+            <div class="col-xs-1 left-arrow">
+
+            </div>
+            <div class="col-xs-4">
+                <h1 id="page-title"></h1>
+
+                <div id="page-content">
+
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div id="product-landing-list"></div>
+            </div>
+
+            <div class="col-xs-1 right-arrow">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row dots-row product" style="margin:0; text-align: center; z-index: 5000; ">
+        <div class="col-xs-12">
+        </div>
+    </div>
+
+    <div id="fixed-footer" data-role="footer" data-position="fixed" data-tap-toggle="false">
+        <h1 class="footer-title footer-title-up products-header">PRODUCTS</h1>
+
+        <div class="frame" style="display: none;">
+            <ul class="slidee"></ul>
+        </div>
+
+    </div>
+
+</div>
+<script src="/presentations/_Scripts/bootstrap.min.js"></script>
+<script>
+
+    $(document).on('pagecreate', function () {
+        $.mobile.ajaxEnabled = false;
+
+        //Initialize page container per docs
+        $("#main-content").pagecontainer({defaults: true});
+
+    });
+
+    $(document).ready(function () {
+        var nextPage = parseInt(sessionStorage.getItem('PAGE_ID')) + 1;
+        var nextPageDetails = get_page_details(nextPage);
+        var previousPage = parseInt(sessionStorage.getItem('PAGE_ID')) - 1;
+        var previousPageDetails = get_page_details(previousPage);
+
+        if (previousPageDetails.filename == 'products/product') {
+            var html = '<a data-url="product.html" onclick="showPrevious(' + previousPage + ')">';
+            html += '<span class="arrow glyphicon glyphicon-chevron-left" id="arrow-left"></span>';
+            html += '</a>';
+            $('.left-arrow').html(html).show();
+        }
+        else {
+            $('.left-arrow').html('');
+        }
+        if (nextPageDetails.filename == 'products/product') {
+            var html = '<a data-url="product.html" onclick="showNext(' + nextPage + ')">';
+            html += '<span class="arrow glyphicon glyphicon-chevron-right" id="arrow-right"></span>';
+            html += '</a>';
+            $('.col-xs-1.right-arrow').html(html).show();
+        }
+        else {
+            $('.col-xs-1.right-arrow').html('');
+        }
+
+
+        // -------------------------------------------------------------
+        //   Basic Navigation
+        // -------------------------------------------------------------
+        (function () {
+            var $frame = $('.frame');
+            var $slidee = $frame.children('ul').eq(0);
+            var $wrap = $frame.parent();
+
+            // Call Sly on frame
+            $frame.sly({
+                horizontal: 1,
+                itemNav: 'basic',
+                smart: 1,
+                activateOn: 'drag',
+                mouseDragging: 1,
+                touchDragging: 1,
+                releaseSwing: 1,
+                startAt: 3,
+                scrollBy: 0,
+                pagesBar: $wrap.find('.pages'),
+                activatePageOn: 'tap',
+                speed: 300,
+                elasticBounds: 0,
+                dragHandle: 1,
+                dynamicHandle: 1,
+                clickBar: 1
+
+            });
+
+
+        }());
+    });
+
+    function showPrevious(toPage) {
+        console.log('1');
+        sessionStorage.setItem('PAGE_ID', toPage);
+        load_page_info(toPage);
+        var previousPage = parseInt(toPage) - 1;
+        var previousPageDetails = get_page_details(previousPage);
+        var nextPage = parseInt(toPage) + 1;
+        $('#main-container').pagecontainer("change", "product.html", {transition: "flip"});
+        if (previousPageDetails.filename == 'products/product') {
+            var html = '<a data-url="product.html" onclick="showPrevious(' + previousPage + ')">';
+            html += '<span class="arrow glyphicon glyphicon-chevron-left" id="arrow-left"></span>';
+            html += '</a>';
+            $('.left-arrow').html(html).show();
+        }
+        else {
+            $('.left-arrow').html('');
+        }
+        var html = '<a data-url="product.html" onclick="showNext(' + nextPage + ')">';
+        html += '<span class="arrow glyphicon glyphicon-chevron-right" id="arrow-right"></span>';
+        html += '</a>';
+        $('.col-xs-1.right-arrow').html(html).show();
+    }
+
+    function showNext(toPage) {
+        sessionStorage.setItem('PAGE_ID', toPage);
+        load_page_info(toPage);
+        var previousPage = parseInt(toPage) - 1;
+        var nextPage = parseInt(toPage) + 1;
+        var nextPageDetails = get_page_details(nextPage);
+//            sessionStorage.setItem('PREVIOUS_PAGE_ID', fromPage);
+        $('#main-container').pagecontainer("change", "product.html", {transition: "flip"});
+        var html = '<a data-url="product.html" onclick="showPrevious(' + previousPage + ')">';
+        html += '<span class="arrow glyphicon glyphicon-chevron-left" id="arrow-left"></span>';
+        html += '</a>';
+        $('.left-arrow').html(html).show();
+        if (nextPageDetails.filename == 'products/product') {
+            var html = '<a data-url="product.html" onclick="showNext(' + nextPage + ')">';
+            html += '<span class="arrow glyphicon glyphicon-chevron-right" id="arrow-right"></span>';
+            html += '</a>';
+            $('.col-xs-1.right-arrow').html(html).show();
+        }
+        else
+            {
+                $('.col-xs-1.right-arrow').hide();
+            }
+        }
+
+</script>
+
+</div>
+</body>
+</html>
