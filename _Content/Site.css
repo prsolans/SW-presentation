@@ -190,6 +190,7 @@ p, li, li ul li {
 .client-callout {
     background : white;
     text-align : center;
+    height: 100%;
 }
 
 .container {

@@ -15,6 +15,16 @@ var settings = '[{ "id": "'+presID+'", "division":"Swagelok D&uuml;sseldorf", "c
 var theseSettings = get_presentation_settings();
 var presentationDirectory = theseSettings[0].assetDir;
 
+//var culture = '/presentations/_Scripts/culture/en-us.js';
+
+//jQuery.getScript(culture).done(function (script, textStatus) {
+
+//    console.log("Culture script loaded");
+//})
+//  .fail(function (jqxhr, settings, exception) {
+//      console.log("Culture script loading error.");
+//  });;
+
 /*
  * marketList: List of markets that are displayed within this presentation
  * {string} title - Market presentation title
@@ -39,19 +49,7 @@ var marketList = '[' +
  * 
  */
 var videoList = '[' +
-    '{ "page_element": "ceo-video", "videofileWebm":"/presentations/_Content/videos/sample-webm.webm", "videofileMP4":"/presentations/_Content/videos/Swagelok Distrib Art 03-HD.mp4", "posterfile":"/presentations/_Content/videos/swagelok_video_artAnton.jpg", "subtitlefile":"/presentations/_Content/videos/swagelok_video_artAnton.vtt", "caption":"Art Anton <br/>Swagelok President and CEO"},' +
-    '{ "page_element": "introScreen-video", "videofileWebm":"/presentations/_Content/videos/sample-webm.webm", "videofileMP4":"/presentations/_Content/videos/SWAGELOK_Ext_BrandEssence_01-21c.mp4", "posterfile":"/presentations/_Content/videos/swagelok_video_artAnton.jpg", "subtitlefile":"/presentations/_Content/videos/swagelok_video_artAnton.vtt", "caption":"Art Anton <br/>Swagelok President and CEO"},' +
-    '{ "page_element": "oneSwagelok-video", "videofileWebm":"/presentations/_Content/videos/sample-webm.webm", "videofileMP4":"/presentations/_Content/videos/Swagelok Distrib Art v2 05-HD.mp4", "posterfile":"/presentations/_Content/videos/swagelok_video_artAnton.jpg", "subtitlefile":"/presentations/_Content/videos/swagelok_video_artAnton.vtt", "caption":"Art Anton <br/>Swagelok President and CEO"},' +
     '{ "page_element": "distributor-video", "videofileWebm":"/presentations/_Content/videos/sample-webm.webm", "videofileMP4":"/presentations/_Content/videos/Swagelok Distrib Andreas 02-HD.mp4", "posterfile":"/presentations/_Content/videos/distributor_video_andreas.jpg", "subtitlefile":"/presentations/_Content/videos/distributor_video_andreas.vtt", "caption":"A Word from Andreas Rueb<br/>Swagelok D&uuml;sseldorf Managing Director"},' +
-    '{ "page_element": "businessModel-video", "videofileWebm":"/presentations/_Content/videos/sample-webm.webm", "videofileMP4":"", "posterfile":"/presentations/_Content/videos/businessModel.jpg", "subtitlefile":"/presentations/_Content/videos/swagelok_video_artAnton.vtt", "caption":""},' +
-    '{ "page_element": "marketsCustomers-video", "videofileWebm":"/presentations/_Content/videos/sample-webm.webm", "videofileMP4":"", "posterfile":"/presentations/_Content/videos/marketsCustomers.jpg", "subtitlefile":"/presentations/_Content/videos/swagelok_video_artAnton.vtt", "caption":""},' +
-    '{ "page_element": "engineering-video", "videofileWebm":"/presentations/_Content/videos/sample-webm.webm", "videofileMP4":"/presentations/_Content/videos/Swagelok Distrib DavePeace 04-HD.mp4", "posterfile":"/presentations/_Content/videos/engineering.jpg", "subtitlefile":"/presentations/_Content/videos/swagelok_video_artAnton.vtt", "caption":"Dave Peace<br/>Swagelok Vice President, Engineering"},' +
-    '{ "page_element": "shopFloorCulture-video", "videofileWebm":"/presentations/_Content/videos/sample-webm.webm", "videofileMP4":"", "posterfile":"/presentations/_Content/videos/cultureValues.jpg", "subtitlefile":"/presentations/_Content/videos/swagelok_video_artAnton.vtt", "caption":""},' +
-    '{ "page_element": "quality-video", "videofileWebm":"/presentations/_Content/videos/sample-webm.webm", "videofileMP4":"/presentations/_Content/videos/Swagelok Distrib TimRosengarten 03-HD.mp4", "posterfile":"/presentations/_Content/videos/quality.jpg", "subtitlefile":"/presentations/_Content/videos/swagelok_video_artAnton.vtt", "caption":"Tim Rosengarten<br/>Swagelok Vice President, Continuous Improvement & Quality "},' +
-    '{ "page_element": "manufacturing-video", "videofileWebm":"/presentations/_Content/videos/sample-webm.webm", "videofileMP4":"", "posterfile":"/presentations/_Content/videos/manufacturing.jpg", "subtitlefile":"/presentations/_Content/videos/swagelok_video_artAnton.vtt", "caption":""},' +
-    '{ "page_element": "associates-video", "videofileWebm":"/presentations/_Content/videos/sample-webm.webm", "videofileMP4":"", "posterfile":"/presentations/_Content/videos/associates.jpg", "subtitlefile":"/presentations/_Content/videos/swagelok_video_artAnton.vtt", "caption":""},' +
-    '{ "page_element": "socialResponsibility-video", "videofileWebm":"/presentations/_Content/videos/sample-webm.webm", "videofileMP4":"", "posterfile":"/presentations/_Content/videos/socialResponsibility.jpg", "subtitlefile":"/presentations/_Content/videos/swagelok_video_artAnton.vtt", "caption":""},' +
-    '{ "page_element": "globalSourcing-video", "videofileWebm":"/presentations/_Content/videos/sample-webm.webm", "videofileMP4":"", "posterfile":"/presentations/_Content/videos/globalSourcing.jpg", "subtitlefile":"/presentations/_Content/videos/distributor_video_andreas.vtt", "caption":""}' +
     ']';
 
 /*
